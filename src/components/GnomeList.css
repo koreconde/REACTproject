@@ -1,0 +1,56 @@
+.frame {
+  margin-top: 80px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 1rem;
+}
+
+.btnBox {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.btn {
+  flex-basis: 70%;
+  background-color: #219bd9;
+  border: 1px solid #219bd9;
+  color:#fff;
+  font-size: 2rem;
+  margin: 1rem auto;
+  
+}
+
+/* MEDIAS QUERIES */
+
+@media (min-width: 550px) {
+  .frame {
+    align-items: stretch;
+    align-content: space-around;
+  }
+
+  body {
+
+    color: #fff;
+  }
+  
+
+  .btn {
+    flex-basis: 50%;
+    margin: 1rem auto 0;
+  }
+}
+
+@media (min-width: 850px) {
+  .frame {
+    align-items: stretch;
+    align-content: space-around;
+  }
+
+  .btn {
+    flex-basis: 30%;
+  }
+  body {
+
+    color: #fff;
+  }
+}

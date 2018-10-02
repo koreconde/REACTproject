@@ -1,0 +1,62 @@
+{
+  "name": "exercise-code-sopra",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest --watchAll",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --host 0.0.0.0 --mode development",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 Chrome versions"
+            ]
+          }
+        }
+      ],
+      "react",
+      "stage-2"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+    }
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^22.4.3",
+    "jest-css-modules": "^1.1.0",
+    "react-testing-library": "^2.1.1",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "grunt": "^1.0.3",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  }
+}
